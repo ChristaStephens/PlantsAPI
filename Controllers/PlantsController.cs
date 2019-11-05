@@ -8,6 +8,10 @@ namespace PlantsAPI.Controllers
     //not static
     //to show that it is actually a controller we need to decorate
     //it with "apicontroller"
+    //Route is the path for where the action method is being called.
+    //the action method is telling the browser what to return
+    //in this case return the action of iterating through the array.
+    [Route("api/[controller]")]
     [ApiController]
     public class PlantsController : ControllerBase
     {
